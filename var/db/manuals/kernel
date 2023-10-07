@@ -1,0 +1,41 @@
+KOMPOT USER MANUAL: KERNEL
+
+Kompot runs a custom kernel configured around the time of
+kernel 5.2.
+
+
+KERNEL UPGRADE:
+
+The system kernel sources are stored in "/usr/src/linux". Ensure
+the symbolic link is up to date and points to the latest sources.
+
+When working with new sources, copy the active config file over
+to "/usr/src/linux" and run "make oldconfig". Following this step
+a GUI application can be used to configure the kernel by running
+"make menuconfig". Ensure that once opened, the correct config
+file is opened.
+
+Ensure the EFI partition is mounted to "/boot". Once configured, 
+build by executing "make && make modules"". Then, execute
+"make install && make modules_install". This should ensure that
+the new kernel, as well as it's config and System.map are copied
+to the EFI directory. Note that the old config and kernel will 
+be marked with a ".old" extension.
+
+Currently, genkernel is used to generate initramfs:
+
+"genkernel --install --kernel-config=<CONFIG> initramfs"
+
+Once complete, move new kernel to "/boot/efi/boot/bootx64.efi".
+Copy the new initramfs to '/boot/initramfs.img'
+
+Kompot boots directly using EFI. A new EFI entry will need to be
+created. To do so, "efibootmgr" is utilised. First, remove the
+old boot entry: "efibootmgr -Bb <NUM>". Now, create a new entry:
+
+"efibootmgr -c -d /dev/sda -p 1 -L "Kompot" -l "\efi\boot\bootx
+64.efi" initrd='\initramfs'"
+
+Take care to ensure the ".img" extension is not included in the
+definition of "initrd". Just like that, the kernel upgrade is
+complete. Good job!

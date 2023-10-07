@@ -1,0 +1,108 @@
+KOMPOT USER MANUAL: PROGRAMS
+
+Applications can be invoked through either xTerm or the run menu.
+
+
+APPLICATIONS:
+
+bombadillo    : gopher & gemini client
+eclean		  : clean unused packages
+elinks 		  : text based web browser
+feh 		  : image viewer
+irssi 		  : irc client
+mpv 		  : video player
+nano		  : backup text editor
+nasm		  : assembler
+neomutt		  : email client
+nvim 		  : text editor
+oathtool      : 2FA
+pass		  : password manager 
+qutebrowser	  : web browser
+ranger		  : file manager
+rtorrent      : bittorrent interface
+s2ram		  : suspend to RAM
+wgetpaste 	  : pastebin tool
+wpa_cli		  : interactive network scanner
+
+
+OTHER UTILITIES:
+
+qutebrowser-clean.sh	: clean cookies & cache
+
+
+
+HOWTO irssi:
+https://irssi.org
+
+Start the program:
+irssi <options> <url> <port>
+
+Navigate servers:
+/connect, /join, /leave, /nick
+
+Secure nick inside server:
+/msg NickServ HELP
+
+Query channels:
+/msg Alis LIST <query>
+
+List of @chat commands:
+https://pastebin.com/raw/sRaG51VD
+
+OPTIONS (irssi):
+
+-tls			  : Enables TLS.
+
+
+HOWTO oathtool:
+
+Retrieve the key:
+pass github.2fa
+
+Get the code:
+oathtool -b --totp "<key>"
+
+
+HOWTO neomutt:
+
+Mark email for deletion:
+<d>
+
+Sync changes with server:
+<$>
+
+
+
+HOWTO pass:
+
+Get password:
+pass <name>
+
+Store password:
+pass insert <name>
+
+List passwords:
+pass list
+
+
+
+HOWTO ranger:
+
+Start program:
+ranger
+
+-Arrow keys to move around.
+-Space to select file/directory.
+
+:mkdir / :touch		- Create directory/file(s).
+:delete				- Delete directory/file(s).
+
+
+
+HOWTO xterm:
+
+Copy Text:
+Shift+PrtSc OR Right click
+
+Paste Text:
+Shift+Insert OR Middle click

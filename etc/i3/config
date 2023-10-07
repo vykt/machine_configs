@@ -1,0 +1,94 @@
+# General
+font pango:Terminus 14
+default_border pixel 4
+gaps inner 8
+
+# Colour
+# class < border < backgr. < text < indicator < child_border
+client.focused #101010 #101010 #B4B4B4 #B4B4B4 #101010
+client.focused_inactive #000000 #000000 #B4B4B4 #000000 #000000
+client.unfocused #000000 #000000 #B4B4B4 #000000 #000000
+client.urgent #000000 #000000 #B4B4B4 #000000 #000000
+client.placeholder #000000 #000000 #B4B4B4 #000000 #000000
+
+# Wallpaper
+exec_always feh --bg-scale $FEHBGDIR/$FEHBGCURRENT
+
+# Status Bar
+bar {
+	status_command i3blocks
+
+	# Bar Colour
+	colors {
+		background #000000
+		statusline #B4B4B4
+		separator #DD7474
+
+		# class < border < background < text
+		focused_workspace #000000 #000000 #DD7474
+		active_workspace #000000 #000000 #B4B4B4
+		inactive_workspace #000000 #000000 #B4B4B4
+		urgent_workspace #000000 #000000 #B4B4B4
+		binding_mode #000000 #000000 #B4B4B4
+	}
+}
+
+# Floating Windows
+for_window [class="feh"] floating enable
+for_window [class="mpv"] floating enable
+
+# Key Binds
+floating_modifier Mod1
+bindsym Mod1+Return exec xterm
+bindsym Mod1+Shift+q kill
+bindsym Mod1+d exec rofi -show run -theme kompot
+
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
+
+bindsym Mod1+h split h
+bindsym Mod1+v split v
+
+mode "resize" {
+
+	bindsym Right resize shrink width 10 px
+	bindsym Up resize grow height 10 px
+	bindsym Down resize shrink height 10 px
+	bindsym Left resize grow width 10 px
+
+	bindsym Mod1+r mode "default"
+	bindsym Escape mode "default"
+	bindsym q mode "default"
+
+}
+
+bindsym Mod1+r mode "resize"
+
+bindsym Mod1+f fullscreen toggle
+bindsym Mod1+s layout stacking
+bindsym Mod1+w layout tabbed
+bindsym Mod1+e layout default
+
+bindsym Mod1+Shift+space floating toggle
+bindsym Mod1+space focus mode_toggle
+bindsym Mod1+a focus parent
+bindsym Mod1+q focus child
+
+bindsym Mod1+1 workspace 1
+bindsym Mod1+2 workspace 2
+bindsym Mod1+3 workspace 3
+bindsym Mod1+4 workspace 4
+bindsym Mod1+5 workspace 5
+bindsym Mod1+6 workspace 6
+
+bindsym Mod1+Shift+1 move workspace 1
+bindsym Mod1+Shift+2 move workspace 2
+bindsym Mod1+Shift+3 move workspace 3
+bindsym Mod1+Shift+4 move workspace 4
+bindsym Mod1+Shift+5 move workspace 5
+bindsym Mod1+Shift+6 move workspace 6
+
+bindsym Mod1+Shift+c reload
+bindsym Mod1+Shift+e exit

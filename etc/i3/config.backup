@@ -1,0 +1,46 @@
+floating_modifier Mod1
+
+bindsym Mod1+Return exec xterm
+bindsym Mod1+Shift+q kill
+bindsym Mod1+d exec rofi -show run -theme kompot
+
+bindsym Mod1+j focus left
+bindsym Mod1+k focus down
+bindsym Mod1+l focus up
+bindsym Mod1+semicolon focus right
+
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
+
+bindsym Mod1+h split h
+bindsym Mod1+v split v
+
+bindsym Mod1+f fullscreen toggle
+bindsym Mod1+s layout stacking
+bindsym Mod1+w layout tabbed
+bindsym Mod1+e layout default
+
+bindsym Mod1+Shift+space floating toggle
+bindsym Mod1+space focus mode_toggle
+bindsym Mod1+a focus parent
+bindsym Mod1+d focus child
+
+bindsym Mod1+1 workspace 1
+bindsym Mod1+2 workspace 2
+bindsym Mod1+3 workspace 3
+bindsym Mod1+4 workspace 4
+bindsym Mod1+5 workspace 5
+bindsym Mod1+6 workspace 6
+
+bindsym Mod1+Shift+1 move workspace 1
+bindsym Mod1+Shift+2 move workspace 2
+bindsym Mod1+Shift+3 move workspace 3
+bindsym Mod1+Shift+4 move workspace 4
+bindsym Mod1+Shift+5 move workspace 5
+bindsym Mod1+Shift+6 move workspace 6
+
+bindsym Mod1+Shift+c reload
+bindsym Mod1+Shift+1 restart
+bindsym Mod1+Shift+e exit

@@ -1,0 +1,10 @@
+INSTALL:
+    feh
+    neomutt
+    irssi
+    terminus font
+    netnote
+    alsa
+    pulseaudio
+    pass
+    gnupg

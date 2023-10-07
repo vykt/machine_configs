@@ -1,0 +1,26 @@
+KOMPOT USER MANUAL: NETWORK
+
+Ethernet is not confirmed to be working due to untested kernel options.
+WiFi is tested to work. The default wireless card is 'wlp2s0'.
+wpa_supplicant is used to manage wireless connections.
+
+wpa_cli is an interactive frontend for wpa_supplicant. The following
+commands allow wpa_cli to update the config located at
+/etc/wpa_supplicant/wpa_supplicant.conf:
+
+	scan				: Begin scan of nearby networks.
+
+	scan_results		: Cease scan, display results of scan.
+
+	add_network			: Create new network in config. Returns id.
+
+	set_network <id> <tag> <value>	: Change attributes of network.
+
+		<id>	: Unique identifier of network.
+		
+		<tag>	: Attribute of network (ssid, psk, identity)
+
+
+	enable_network <id>	: Enable network <id> for connection.
+
+	save_config			: Write changes to config.

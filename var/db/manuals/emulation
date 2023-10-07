@@ -1,0 +1,31 @@
+KOMPOT USER MANUAL: EMULATION
+
+Emulation is provided by QEMU. A disk utility can be invoked with
+"qemu-img" to create storage image devices. "qemu-system-x86-64"
+is used with the following options to start QEMU.
+
+OPTIONS:
+
+-enable-kvm			: Enable KVM support.
+
+-cpu <host/x64_86>	: Sets CPU architecture.
+
+-smp <n>			: Allocate n cores.
+
+-vga <card>			: Set graphics card. "cirrus" for windows.
+					: Suggested: "virtio" Other: "sdl", "cirrus"
+
+-display <opt>		: Set display options.
+				    : Suggested: "gtk,gl=on"
+
+-cdrom <iso image>	: Loads installation media into virtual cdrom.
+
+-boot menu=on		: Enable boot menu.
+
+-drive <hdd image>	: Sets virtual storage media.
+
+-m 8G				: Set memory.
+
+-name "<name>"		: Set name of VM.
+
+-show-cursor		: Enables cursor.

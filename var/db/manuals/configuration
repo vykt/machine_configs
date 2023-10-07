@@ -1,0 +1,49 @@
+KOMPOT USER MANUAL: CONFIGURATION
+
+Configuration is done globally for all programs. Those without
+global configuration files (such as qutebrowser) have a config
+file stored in /etc symbolically linked to the users' directories.
+Make sure when adding other such programs the symbolic link is
+also added to "/etc/skel".
+
+
+CONFIGURATION:
+
+./backup-manager.conf					: System backup.
+./bash/{bashrc,bashrc.backup}			: Bash config.
+./conf.d/{consolefont,displaymanager,	: System font, set XDM.
+		  hostname,keymaps}				: Hostname, UK locale. 
+./doas.conf								: Auth & auth groups.
+./env.d/{02locale,94fehbg}				: UTF locale, wallpaper,
+										: See env-update(1).
+./fonts/{local.conf,conf.d/*}			: System font extended.
+./fstab									: System partitions
+./group									: Groups & members of.
+./hosts									: Define loopback.
+./i3/config								: GUI, colours, keybinds.
+./i3blocks.conf							: GUI sys infomation bar.
+./init.d/aesthetics						: Sets console colours.
+./locale.gen							: Locale values.
+./passwd								: Users, user info.
+./portage/make.conf						: Portage configuration.
+./portage/package.license				: License management.
+./portage/package.accept_keywords		: Enables some ~amd64 flags.
+./portage/package.{mask,unmask}			: Enables unstable packages.
+./portage/package.use					: Enables pack-only flags.
+./portage/repos.conf/kompot.conf		: Define custom repository.
+./qtbrowser/config.py					: Qutebrowser configiration.
+./qtbrowser/css/kompot.css				: Qutebrowser custom css.
+./rc.conf								: Disable openRC colour.
+./rofi.conf								: Run menu font config.
+./rofi.d/kompot.rasi					: Run menu colour config.
+./etc/runlevels/default/aesthetics		: Add aesth. to default boot.
+./shadow								: Users & user passwords.
+./skel/.config/qutebrowser/config.py	: Adds qutebrowser config.
+./timezone								: Defines timezone.
+./vim/sysinit.vim						: Neovim settings.
+./wpa_supplicant/wpa_supplicant.conf	: WiFi saved configurations.
+./X11/Sessions/i3wm						: Starts i3 window manager.
+./X11/xinit/xinitrc						: Starting programs set.
+./X11/xinit/xinitrc.d/90-i3				: Execs i3 window manager.
+./X11/xorg.conf.d/30-keyboard.conf		: Sets X11 keyboard options.
+./xdg/neomutt/neomuttrc					: Set mail directory.

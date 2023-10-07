@@ -1,0 +1,29 @@
+Xcursor.theme: neutral plus
+Xcursor.size: 14
+
+!XTerm General
+xterm*background: black
+xterm*foreground: grey
+xterm*loginShell: true
+xterm*faceName: Terminus
+xterm*faceSize: 14
+xterm*selectToClipboard: true
+
+!XTerm Kompot Theme
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:dd/74/74
+xterm*color2: rgb:dd/a9/74
+xterm*color3: rgb:dd/bf/74
+xterm*color4: rgb:dd/74/74
+xterm*color5: rgb:dd/a9/74
+xterm*color6: rgb:dd/bf/74
+xterm*color7: rgb:b4/b4/b4
+
+xterm*color8: rgb:64/64/64
+xterm*color9: rgb:dd/74/74
+xterm*color10: rgb:dd/a9/74
+xterm*color11: rgb:dd/bf/74
+xterm*color12: rgb:dd/74/74
+xterm*color13: rgb:dd/a9/74
+xterm*color14: rgb:dd/bf/74
+xterm*color15: rgb:f1/f1/f1

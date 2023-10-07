@@ -1,0 +1,48 @@
+KOMPOT USER MANUAL: INTERFACE
+
+The graphical interface is started by running "startx" in tty after
+a successful login. Kompot utilises X11 display server managed by
+the i3 windowing system.
+
+
+KEYBINDS (i3):
+
+Alt+NUM		  : Switch to NUM workspace.
+Alt+Shift+NUM : Move window to workspace.
+Alt+D		  : Open run menu.
+Alt+R		  : Toggle resize mode. Adjust size with arrow keys.
+Alt+ARROW	  : Switch window focus.
+
+
+KEYBINDS (xTerm):
+
+Alt+Enter	  : Open xTerm.
+Shift+PrtSc	  : Copy text across xTerms.
+Shift+Insert  : Paste text across xTerms.
+
+
+KEYBINDS (elinks):
+
+Insert		  : Scroll up.
+Delete		  : Scroll down.
+PgUp		  : Page up.
+PgDn		  : Page down.
+S			  : Bookmarks.
+Esc			  : Open menu.
+
+
+KEYBINDS (qutebrowser):
+
+:			  : Begin command.
+Ctrl+T		  : Open new tab.
+D			  : Close tab.
+U			  : Undo tab close.
+Ctrl+NUM	  : Switch tabs.
+Ctrl+H		  : Open homepage.
+Shift+H		  : Previous page.
+Shift+J		  : Next page.
+
+
+KEYBINDS (irssi):
+
+Esc+NUM		  : Open tab NUM.

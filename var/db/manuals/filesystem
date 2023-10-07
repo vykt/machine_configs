@@ -1,0 +1,36 @@
+KOMPOT USER MANUAL: FILESYSTEM
+
+Kompot is a customised version of the Gentoo distribution of
+GNU/Linux. Many files exist throughout the filesystem that change
+default configurations and behaviour of Gentoo. Below is the list
+of all modified entries outside of "/home". NOTE: portage managed
+files not included.
+
+
+PATHS:
+
+/boot							: Kernel, initramfs, kernel config.
+
+/boot/efi/boot					: Active kernel.
+
+/mnt/usbNUM						: Hotplug USB mount area.
+
+/mnt/hdd						: Hotplug HDD mount area.
+
+/mnt/hdd/Backups/kompot			: Hotplug HDD backup directory.
+
+/opt/bin						: Packages installed without portage.
+
+/opt/vm							: QEMU virtual machine files.
+
+/usr/share/aesthetics			: Term colour values and wallpapers.
+
+/usr/share/vim/vim82/colors		: Kompot vim theme for neovim.
+
+/var/cache/distfiles			: Stores local source packages.
+
+/var/db/manuals					: Location of kompot manual pages.
+
+/var/db/repos/kompot			: Kompot software repository.
+
+/var/db/repos/crossdev			: Crossdev repository.
