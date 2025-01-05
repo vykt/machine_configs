@@ -1,0 +1,20 @@
+-- /usr/local/share/config:
+
+    Software is configured globally to permit easy creation of new users.
+    This directory stores configuration files for software that only accepts 
+    local configuration. The files inside this directory can then be 
+    symbolically linked into users' home directories.
+
+    Some configuration files, such as `gdbinit`, are copied by value through
+    /etc/skel.
+
+
+-- /usr/local/share/theme:
+
+    Permitted colours, background images, etc.
+
+
+-- /usr/local/share/doc/$HOSTNAME:
+
+    Documentation for this specific machine. Should be symbolically linked to 
+    $HOME/.$HOSTNAME.

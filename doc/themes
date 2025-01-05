@@ -1,0 +1,27 @@
+-- derevko:
+
+	 colour  | standard | bright
+    ---------|----------|--------
+	Black    | #000000  | #686868
+	Red      | #DD7474  | #FD9494
+	Green    | #84DD74  | #A4FD94
+	Yellow   | #DDBF74  | #FDDF94
+	Blue     | #9874DD  | #A894FD
+	Magenta  | #DD9A74  | #FDBA94
+	Cyan     | #74DDAD  | #94FDCD
+	White    | #B8B8B8  | #D8D8D8
+
+
+-- bashnya:
+	
+	 colour  | standard | bright
+    ---------|----------|--------
+	Black    | 
+	Red      | 
+	Green    | 
+	Yellow   |       [todo]
+	Blue     | 
+	Magenta  | 
+	Cyan     | 
+	White    | 
+	

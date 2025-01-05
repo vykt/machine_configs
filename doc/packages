@@ -1,0 +1,69 @@
+-- basic:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	zsh            | shell        | cli
+	helix          | text editor  | cli
+	ranger         | file mgr.    | tui
+	pass           | password mgr.| cli
+	aichat         | ai client    | cli
+
+
+-- ui:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	X11            | display srv. | daemon
+	Terminus-font  | font         | resource
+	dwm            | window mgr.  | daemon
+	pulseaudio     | sound srv.   | daemon	
+
+
+--- internet:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	elinks         | inet browser | tui
+	qutebrowser    | inet browser | gui
+	bombadillo     | inet browser | tui
+	irssi          | irc client   | tui
+	neomutt        | email client | tui 
+
+
+--- media:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	feh            | image viewer | gui
+	
+
+--- admin:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	doas           | auth. util.  | cli
+	backup-manager | backup util. | cli
+	gnupg          | secret store | cli
+
+
+-- development:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	gcc            | compiler     | cli
+	clang          | compiler     | cli
+	nasm           | assembler    | cli
+	build-essentia.| build tools  | cli
+	cmake          | build tools  | cli
+	git            | version ctrl.| cli
+	gitui          | version ctrl.| tui
+	binutils       | bin analysis | cli
+	elfutils       | bin analysis | cli
+	gdb            | debugger     | cli,tui
+	rizin          | disassembler | cli,tui
+
+
+-- TODO:
+
+	-radio client
+	-network analysis tools

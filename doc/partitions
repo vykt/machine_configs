@@ -1,0 +1,7 @@
+-- partitions:
+
+	/boot [EFI]
+	/
+	/home
+	/var/log
+	/var/cache
