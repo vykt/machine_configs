@@ -1,0 +1,5 @@
+set disassembly-flavor intel
+set tui tab-width 4
+set tui compact-source on
+set scheduler-locking on
+set follow-fork-mode child

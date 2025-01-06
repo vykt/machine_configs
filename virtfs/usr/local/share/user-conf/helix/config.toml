@@ -1,0 +1,23 @@
+theme = "kompot"
+
+[editor]
+color-modes = true
+true-color = true
+rulers = [80]
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "bar"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+C-right = "move_next_word_start"
+C-left  = "move_prev_word_end"

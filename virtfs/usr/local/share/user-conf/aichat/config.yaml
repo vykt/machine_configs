@@ -1,0 +1,7 @@
+# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+
+model: openai
+light_theme: false
+clients:
+- type: openai
+  api_key:

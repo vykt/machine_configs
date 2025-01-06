@@ -1,0 +1,11 @@
+[[language]]
+name = "c"
+file-types = [ "c", "h" ]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "clangd" ]
+
+[[language]]
+name = "cpp"
+file-types = [ "cpp", "hpp", "cxx", "hxx", "cc", "hh", "h" ]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "clangd" ]
