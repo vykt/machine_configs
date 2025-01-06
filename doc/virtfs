@@ -1,4 +1,4 @@
--- /usr/local/share/config:
+-- /usr/local/share/user-config:
 
     Software is configured globally to permit easy creation of new users.
     This directory stores configuration files for software that only accepts 
@@ -7,6 +7,12 @@
 
     Some configuration files, such as `gdbinit`, are copied by value through
     /etc/skel.
+
+
+-- /usr/local/src:
+
+    Sources for software installed or developed, or simply kept on this 
+    machine.
 
 
 -- /usr/local/share/theme:

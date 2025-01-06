@@ -15,7 +15,11 @@
 	---------------|--------------|---------
 	X11            | display srv. | daemon
 	Terminus-font  | font         | resource
-	dwm            | window mgr.  | daemon
+	bspwm          | window mgr.  | daemon
+	polybar        | status bar   | cli
+	ly             | login mgr.   | tui,src
+	kitty          | terminal     | gui
+	rofi           | launcher     | gui
 	pulseaudio     | sound srv.   | daemon	
 
 
