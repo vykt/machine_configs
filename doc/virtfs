@@ -9,6 +9,14 @@
     /etc/skel.
 
 
+-- /usr/local/share/services:
+
+    Custom systemd services.
+
+
+
+
+
 -- /usr/local/src:
 
     Sources for software installed or developed, or simply kept on this 

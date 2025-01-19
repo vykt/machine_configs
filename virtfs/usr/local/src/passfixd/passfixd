@@ -1,0 +1,40 @@
+#!/bin/sh
+
+
+# expected file path & attributes
+DIRECTORY="/usr/local/share/user-conf/password-store"
+USER="root"
+GROUP="operator"
+PERM="640"
+
+
+# iterate over all fles in the password store
+find "$DIRECTORY" -type f | while read -r FILE; do
+
+    # extract user, group, and permissions
+    user=$(stat -c '%U' "$FILE")
+    group=$(stat -c '%G' "$FILE")
+    perm=$(stat -c '%a' "$FILE")
+
+    # assert file has correct permissions
+    if [ "$user" != "$USER" ] || [ "$group" != "$GROUP" ] || [ "$perm" != "$PERM" ]; then
+
+        # incorrect permissions found, correcting
+        chmod 640 "$FILE"
+        chown root:operator "$FILE"
+    		echo "$FILE fixed during init-time check."
+    fi
+
+done
+
+
+# listen for inotify() events
+inotifywait -m -P --format "%w%f" -e create \
+"$DIRECTORY" | while read FILE; do
+
+    # incorrect permissions found, correcting
+    chmod 640 "$FILE"
+    chown root:operator "$FILE"
+		echo "$FILE fixed."
+
+done;

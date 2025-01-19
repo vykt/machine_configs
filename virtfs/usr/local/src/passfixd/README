@@ -1,0 +1,8 @@
+`passfixd` enforces the same user, group, and permission attributes for all
+files in a given directory. It was hacked together to enforce uniform
+permissions of password gpg files on a system where a single `pass` database
+is shared by all users.
+
+Dependencies:
+
+	-inotify-tools

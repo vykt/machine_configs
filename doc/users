@@ -1,0 +1,10 @@
+-- operator group:
+
+	All accounts share /usr/local/share/user-conf contents, and can modify them.
+	This works well for a single-user development system.
+
+	When users are created, they must be created with /etc/skel-op as their skel
+	directory.
+
+	Only root may write in most cases
+

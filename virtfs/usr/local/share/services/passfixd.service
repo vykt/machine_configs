@@ -1,0 +1,15 @@
+[Unit]
+Description=Maintain permissions of password store entries.
+After=remote-fs.target
+
+[Service]
+Type=simple
+Restart=always
+User=root
+Group=root
+ProtectProc=invisible
+ExecStart=/usr/local/sbin/passfixd
+OOMScoreAdjust=-800
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,34 @@
+!dacha theme
+!by vykt [vykt@digital-dacha.net]
+Xcursor.theme: neutral plus
+Xcursor.size: 1
+
+!Generic
+xterm*background:          black
+xterm*foreground:          grey
+xterm*loginShell:          true
+xterm*faceName:            Terminus
+xterm*faceSize:            14
+xterm*selectToClipboard:   true
+xterm*vt100.dynamicColors: true
+xterm*vt100.colorMode:     true
+xterm*vt100.depth:         24
+
+!dacha theme
+xterm*color0:  rgb:00/00/00
+xterm*color1:  rgb:D7/0A/53
+xterm*color2:  rgb:82/C0/86
+xterm*color3:  rgb:87/67/7B
+xterm*color4:  rgb:8D/94/BA
+xterm*color5:  rgb:90/90/90
+xterm*color6:  rgb:84/AE/B2
+xterm*color7:  rgb:B8/B8/B8
+
+xterm*color8:  rgb:68/68/68
+xterm*color9:  rgb:D7/0A/53
+xterm*color10: rgb:82/C0/86
+xterm*color11: rgb:87/67/7B
+xterm*color12: rgb:8D/94/BA
+xterm*color13: rgb:90/90/90
+xterm*color14: rgb:84/AE/B2
+xterm*color15: rgb:e8/e8/e8

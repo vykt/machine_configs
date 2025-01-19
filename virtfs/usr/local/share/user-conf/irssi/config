@@ -1,0 +1,30 @@
+servers = (
+  { 
+    address = "irc.libera.chat";
+    chatnet = "libera";
+    port = "6697";
+    use_tls = "yes";
+  },
+  {
+    address = "irc.koshka.love";
+    port = "6697";
+    use_tls = "yes";
+  }
+);
+
+chatnets = {
+  libera = {
+    type = "IRC";
+    sasl_mechanism = "PLAIN";
+    sasl_username = "vykt";
+    sasl_password = "doYWH+8QOD4KDQTStkCrbg==";
+  }
+};
+
+
+settings = {
+
+  core = { user_name = "vykt"; real_name = "null"; nick = "vykt"; };
+
+  "fe-text" = { actlist_sort = "refnum"; };
+};

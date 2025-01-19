@@ -1,0 +1,121 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# program launcher
+super + d
+	dmenu_run -fn "Terminus (TTF)-20" -h 48
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit bspwm
+super + shift + Escape
+	bspc quit
+
+# close window
+super + shift + q
+	bspc node -c
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+#super + ctrl + shift + space
+#	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expand / contract window
+super + shift + {h,j,k,l}
+	{bspc node @parent/second -z left -10 0; \
+	bspc node @parent/first -z right -10 0,  \
+	bspc node @parent/second -z top 0 +10;   \
+	bspc node @parent/first -z bottom 0 +10, \
+	bspc node @parent/first -z bottom 0 -10; \
+	bspc node @parent/second -z top 0 -10,   \
+	bspc node @parent/first -z right +10 0;  \
+	bspc node @parent/second -z left +10 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# floating/sticky
+#
+
+# make window floating
+super + g
+	bspc node -f floating
+
+# make window sticky
+	bspc node -t sticky
+
+#
+# volume controls
+#
+
+# increase volume
+super + equal
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+
+# decrease volume
+super + minus
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-

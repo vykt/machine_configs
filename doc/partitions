@@ -1,6 +1,8 @@
--- partitions:
+-- partitions (derevko):
 
-	/boot [EFI]
+	SWAP
+	EFI
+	/boot
 	/
 	/home
 	/var/log

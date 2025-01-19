@@ -1,8 +1,15 @@
+-- system:
+
+	    package    |     type     |  flags
+	---------------|--------------|---------
+	systemd-boot   | boot loader  | sys
+	flatpak        | package mgr. | sys
+
 -- basic:
 
 	    package    |     type     |  flags
 	---------------|--------------|---------
-	zsh            | shell        | cli
+	fish           | shell        | cli
 	helix          | text editor  | cli
 	ranger         | file mgr.    | tui
 	pass           | password mgr.| cli
@@ -17,10 +24,10 @@
 	Terminus-font  | font         | resource
 	bspwm          | window mgr.  | daemon
 	polybar        | status bar   | cli
-	ly             | login mgr.   | tui,src
 	kitty          | terminal     | gui
-	rofi           | launcher     | gui
-	pulseaudio     | sound srv.   | daemon	
+	dmenu          | launcher     | gui
+	pipewire       | sound srv.   | daemon	
+	wireplumber    | pipewire ui  | cli
 
 
 --- internet:
@@ -31,7 +38,7 @@
 	qutebrowser    | inet browser | gui
 	bombadillo     | inet browser | tui
 	irssi          | irc client   | tui
-	neomutt        | email client | tui 
+	aerc           | email client | tui 
 
 
 --- media:
@@ -39,6 +46,8 @@
 	    package    |     type     |  flags
 	---------------|--------------|---------
 	feh            | image viewer | gui
+	gimp (fpk)     | image editor | gui
+	scrot          | screenshot   | cli
 	
 
 --- admin:

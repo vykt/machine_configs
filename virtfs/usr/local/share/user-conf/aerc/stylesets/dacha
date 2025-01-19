@@ -1,0 +1,78 @@
+# dacha aerc theme
+# by vykt [vykt@digital-dacha.net]
+
+# More information on how to configure the styleset can be found in
+# the aerc-stylesets(7) manpage.
+
+# Uncomment these two lines to reset all attributes (except in the [viewer]
+# section) and start from scratch.
+*.default = true
+*.normal = true
+
+*.selected.bg = #B8B8B8
+*.selected.fg = #000000
+
+statusline_*.bg = #000000
+statusline_*.fg = #B8B8B8
+
+*warning.fg = #87677B
+*success.fg = #82C086
+*error.fg   = #D70A53
+*error.bold = true
+
+border.fg   = #B8B8B8
+border.bold = true
+title.bg    = #B8B8B8
+title.fg    = #000000
+title.bold  = true
+
+header.fg   = #84AEB2
+header.bold = true
+
+msglist_unread.bold = true
+msglist_deleted.dim = true
+msglist_marked.bg   = #000000
+msglist_marked.fg   = #8D94BA
+msglist_pill.bg     = #000000
+msglist_pill.fg     = #84AEB2
+
+part_mimetype.fg = #8D94BA
+
+selector_chooser.bold = true
+selector_focused.bold = true
+selector_focused.bg   = #D70A53
+selector_focused.fg   = #E8E8E8
+
+completion_*.bg             = #000000
+completion_pill.bg          = #000000
+#completion_default.fg      = 686868
+#completion_description.fg  = B8B8B8
+#completion_description.dim = true
+
+# [viewer]
+# Uncomment these two lines to reset all attributes in the [viewer] section.
+*.default = true
+*.normal  = true
+
+#url.underline  = true
+#url.fg         = #84AEB2
+#header.bold    = true
+#header.fg      = #8D94BA
+##signature.dim = true
+#signature.fg   = #686868
+#diff_meta.bold = true
+
+#diff_chunk.fg       = 6
+#diff_chunk_func.fg  = 6
+#diff_chunk_func.dim = true
+#diff_add.fg         = 2
+#diff_del.fg         = 1
+
+#quote_1.fg  = 6
+#quote_2.fg  = 4
+#quote_3.fg  = 6
+#quote_3.dim = true
+#quote_4.fg  = 4
+#quote_4.dim = true
+#quote_x.fg  = 5
+#quote_x.dim = true

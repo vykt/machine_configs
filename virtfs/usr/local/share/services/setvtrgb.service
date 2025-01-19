@@ -1,0 +1,14 @@
+[Unit]
+Description=Set TTY RGB at boot-time.
+After=systemd-user-sessions.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Restart=on-failure
+User=root
+Group=root
+ExecStart=/usr/bin/setvtrgb /usr/local/share/theme/dacha.vtrgb
+
+[Install]
+WantedBy=getty.target

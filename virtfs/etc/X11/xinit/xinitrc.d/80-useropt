@@ -1,2 +1,0 @@
-#set keyboard key repeat start time & repeat time (milliseconds)
-xset r rate 400 50
