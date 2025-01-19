@@ -17,7 +17,7 @@ chatnets = {
     type = "IRC";
     sasl_mechanism = "PLAIN";
     sasl_username = "vykt";
-    sasl_password = "doYWH+8QOD4KDQTStkCrbg==";
+    sasl_password = "";
   }
 };
 
