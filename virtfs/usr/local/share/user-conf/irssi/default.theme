@@ -111,17 +111,17 @@ abstracts = {
   msgchannel = "%K:%c$*%n";
 
   # private message, $0 = nick, $1 = host
-  privmsg = "[%R$0%K(%r$1-%K)%n] ";
+  privmsg = "[%c$0%K(%m$1-%K)%n] ";
 
   # private message from you, $0 = "msg", $1 = target nick
   ownprivmsg = "[%r$0%K(%R$1-%K)%n] ";
 
   # own private message in query
   ownprivmsgnick = "{msgnick  $*}";
-  ownprivnick = "%_$*%n";
+  ownprivnick = "%r%_$*%n";
 
   # private message in query
-  privmsgnick = "{msgnick  %R$*%n}";
+  privmsgnick = "{msgnick  %b$*%n}";
 
   ##
   ## Actions (/ME stuff)
@@ -230,7 +230,7 @@ abstracts = {
   prompt = "[$*] ";
 
   sb = " %k[%n$*%k]%n";
-  sbmode = "(%m+%n$*)";
+  sbmode = "(%k+%n$*)";
   sbaway = " (%Gaway%n)";
   sbservertag = ":$0 (change with ^X)";
   sbnickmode = "$0";
@@ -244,7 +244,7 @@ abstracts = {
   # public message
   sb_act_msg = "%k$*";
   # hilight
-  sb_act_hilight = "%K$*";
+  sb_act_hilight = "%r$*";
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 };
