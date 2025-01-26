@@ -10,10 +10,10 @@
 	    package    |     type     |  flags
 	---------------|--------------|---------
 	fish           | shell        | cli
-	helix          | text editor  | cli
+	helix          | text editor  | cli,src
 	ranger         | file mgr.    | tui
 	pass           | password mgr.| cli
-	aichat         | ai client    | cli
+	aichat         | ai client    | cli,pkg
 
 
 -- ui:
@@ -22,10 +22,11 @@
 	---------------|--------------|---------
 	X11            | display srv. | daemon
 	Terminus-font  | font         | resource
-	bspwm          | window mgr.  | daemon
+	bspwm          | window mgr.  | gui
+	sxhkd          | shortcuts    | gui
 	polybar        | status bar   | cli
 	kitty          | terminal     | gui
-	dmenu          | launcher     | gui
+	dmenu          | launcher     | gui,src
 	pipewire       | sound srv.   | daemon	
 	wireplumber    | pipewire ui  | cli
 
@@ -38,7 +39,7 @@
 	qutebrowser    | inet browser | gui
 	bombadillo     | inet browser | tui
 	irssi          | irc client   | tui
-	aerc           | email client | tui 
+	aerc           | email client | tui,src
 
 
 --- media:
@@ -69,11 +70,11 @@
 	build-essentia.| build tools  | cli
 	cmake          | build tools  | cli
 	git            | version ctrl.| cli
-	gitui          | version ctrl.| tui
+	gitui          | version ctrl.| tui,src
 	binutils       | bin analysis | cli
 	elfutils       | bin analysis | cli
 	gdb            | debugger     | cli,tui
-	rizin          | disassembler | cli,tui
+	rizin          | disassembler | cli,tui,pkg
 
 
 -- TODO:

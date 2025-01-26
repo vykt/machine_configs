@@ -1,15 +1,5 @@
--- dacha:
+Theming files can be found in `virtfs/usr/local/share/theme`.
 
-	 colour  | standard | bright
-	---------|----------|--------
-	Black    | #000000  | #686868
-	Red      | #D70A53  | #D70A53
-	Green    | #82C086  | #82C086
-	Yellow   | #87677B  | #87677B
-	Blue     | #8D94BA  | #8D94BA
-	Magenta  | #909090  | #909090
-	Cyan     | #84AEB2  | #84AEB2
-	White    | #B8B8B8  | #E8E8E8
-
-	Black-UI | #101010  |   N/A
-
+Configuration files for some applications have theme information embedded
+inside. In such cases, the config filename is postfixed with .<theme name>.
+When setting up the system, make sure to remove this postfix.
