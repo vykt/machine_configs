@@ -1,4 +1,4 @@
-# dacha-faithful aerc theme
+# dacha-dream aerc theme
 # by vykt [vykt@digital-dacha.net]
 
 # More information on how to configure the styleset can be found in
@@ -15,9 +15,9 @@
 statusline_*.bg = #000000
 statusline_*.fg = #B8B8B8
 
-*warning.fg = #87677B
-*success.fg = #82C086
-*error.fg   = #D70A53
+*warning.fg = #8A6053
+*success.fg = #C09050
+*error.fg   = #943030
 *error.bold = true
 
 border.fg   = #B8B8B8
@@ -26,27 +26,27 @@ title.bg    = #B8B8B8
 title.fg    = #000000
 title.bold  = true
 
-header.fg   = #84AEB2
+header.fg   = #9D585F
 header.bold = true
 
 msglist_unread.bold = true
 msglist_deleted.dim = true
 msglist_marked.bg   = #000000
-msglist_marked.fg   = #8D94BA
+msglist_marked.fg   = #C38981
 msglist_pill.bg     = #000000
-msglist_pill.fg     = #84AEB2
+msglist_pill.fg     = #9D585F
 
-part_mimetype.fg = #8D94BA
+part_mimetype.fg = #C38981
 
 selector_chooser.bold = true
 selector_focused.bold = true
-selector_focused.bg   = #D70A53
+selector_focused.bg   = #9
 selector_focused.fg   = #E8E8E8
 
 completion_*.bg             = #000000
 completion_pill.bg          = #000000
-#completion_default.fg      = 686868
-#completion_description.fg  = B8B8B8
+#completion_default.fg      = #686868
+#completion_description.fg  = #B8B8B8
 #completion_description.dim = true
 
 # [viewer]
@@ -55,9 +55,9 @@ completion_pill.bg          = #000000
 *.normal  = true
 
 #url.underline  = true
-#url.fg         = #84AEB2
+#url.fg         = #9D585F
 #header.bold    = true
-#header.fg      = #8D94BA
+#header.fg      = #C38981
 ##signature.dim = true
 #signature.fg   = #686868
 #diff_meta.bold = true

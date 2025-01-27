@@ -1,0 +1,15 @@
+-- dacha-dream:
+
+	 colour  | standard | bright
+	---------|----------|--------
+	Black    | #000000  | #686868
+	Red      | #943030  | #943030
+	Green    | #C09050  | #C09050
+	Yellow   | #8A6053  | #8A6053
+	Blue     | #C38981  | #C38981
+	Magenta  | #909090  | #909090
+	Cyan     | #9D585F  | #9D585F
+	White    | #B8B8B8  | #E8E8E8
+
+	Black-UI | #101010  |   N/A
+

@@ -1,5 +1,9 @@
-Theming files can be found in `virtfs/usr/local/share/theme`.
+Theming files can be found in `virtfs/usr/local/share/theme`. Configuration
+files for some applications have theme information embedded inside. In such
+cases, the config filename is postfixed with .<theme name>. When setting up
+the system, make sure to remove this postfix.
 
-Configuration files for some applications have theme information embedded
-inside. In such cases, the config filename is postfixed with .<theme name>.
-When setting up the system, make sure to remove this postfix.
+Current themes are:
+
+- dacha-faithful
+- dacha-dream
